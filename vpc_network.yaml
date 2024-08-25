@@ -68,3 +68,9 @@ Resources:
     Properties:
       SubnetId: !Ref PublicSubnet01
       RouteTableId: !Ref RoutePublicSubnet
+
+Outputs:
+  MyVPC:
+    Value: !Ref MyVPC
+    Export:
+      Name: MyVPC
