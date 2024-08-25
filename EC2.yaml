@@ -2,6 +2,7 @@ Resources:
   SGEC2Instance:
     Type: AWS::EC2::SecurityGroup
     Properties:
+      GroupDescription: SG for EC2 Instance 2
       VpcId: !ImportValue MyVPC
       SecurityGroupIngress:
         - IpProtocol: tcp
